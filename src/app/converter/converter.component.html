@@ -1,0 +1,14 @@
+<h2>Currency Converter</h2>
+<!-- Render once currencies is loaded -->
+<div *ngIf="currencies">
+  <input #one type="number" [(ngModel)]="curr1_amt"(input)="update1()">
+  <select [(ngModel)]="curr1" (change)="getRate()">
+    <option *ngFor="let currency of currencies" [ngValue]="currency">{{currency.currencyName}}</option>
+  </select>
+  <br>
+  <input #two type="number" [(ngModel)]="curr2_amt" (input)="update2()">
+  <select [(ngModel)]="curr2" (change)="getRate()">
+    <option *ngFor="let currency of currencies" [ngValue]="currency">{{currency.currencyName}}</option>
+  </select>
+  <div *ngIf="curr1 && curr2">{{curr1_amt | currency: curr1.id}} equals {{curr2_amt| currency: curr2.id}}</div>
+</div>

@@ -3,7 +3,7 @@ Welcome to the quicker way to learn angular!
 If you want to see why Angular is so great, but dont want to struggle through the abstractions
 of the tour of heroes, than this project is your friend!
 
-###Inspiration
+### Inspiration
 https://www.google.com/search?q=google+durrency+converter&rlz=1C1CHBF_enUS798US798&oq=google+durrency+converter&aqs=chrome..69i57j69i64.4883j0j7&sourceid=chrome&ie=UTF-8
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
